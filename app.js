@@ -35,6 +35,14 @@ let balon={//objeto porque tiene {}
     moverse: function(){
         this.x = this.x + this.vX *dT/1000;
         this.y = this.y + this.vY *dT/1000;
+        if(this.y + 1 > 401){
+            this.vY = -this.vY}
+        if(this.x + 5 > 401 ){
+            this.vX = -this.vX}
+        if(this.y < 0) {
+            this.vY = -this.vY}
+        if(this.x < 0){
+            this.vX = -this.vX}
     }
 }
 
